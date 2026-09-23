@@ -10,13 +10,13 @@ function Arrow() { return <span aria-hidden="true">↗</span>; }
 
 export default function Home() {
   return <main>
-    <nav className="nav shell" aria-label="Navegação principal">
+    <header className="site-header"><nav className="nav shell" aria-label="Navegação principal">
       <a className="brand" href="#inicio" aria-label="Lucineia Gomes, início"><span className="brand-mark">LG</span><span>Lucineia Gomes<small>Terapeuta de casais</small></span></a>
       <a className="nav-link" href="#aula">Assistir à aula <Arrow /></a>
-    </nav>
+    </nav></header>
 
     <section className="hero" id="inicio"><div className="shell hero-grid">
-      <div className="hero-copy"><p className="eyebrow">Autonomia emocional nos relacionamentos</p><h1>Você não precisa deixar de amar.<br /><em>Precisa parar de se abandonar.</em></h1><p className="lead">Entenda por que a lógica não consegue, sozinha, silenciar o medo da rejeição — e conheça um caminho para viver o amor sem se diminuir.</p><a className="button" href="#aula">Quero assistir à aula gratuita <Arrow /></a><p className="microcopy">Uma conversa acolhedora para mulheres que estão cansadas de repetir o mesmo ciclo.</p></div>
+      <div className="hero-copy"><p className="eyebrow">Autonomia emocional<br />para mulheres reais</p><h1>Você não precisa<br className="desktop-break" /> deixar de amar.<br /><em>Precisa parar de<br className="desktop-break" /> se abandonar.</em></h1><p className="lead">Entenda por que a lógica não consegue, sozinha, silenciar o medo da rejeição — e conheça um caminho para viver o amor sem se diminuir.</p><a className="button" href="#aula">Quero assistir à aula gratuita <Arrow /></a><p className="microcopy">Uma conversa acolhedora para mulheres que estão cansadas de repetir o mesmo ciclo.</p></div>
       <figure className="hero-portrait">
         <img className="hero-photo" src="/lucineia-gomes.jpeg" alt="Lucineia Gomes, terapeuta de casais, sentada em seu escritório" width={864} height={1536} fetchPriority="high" />
         <figcaption>
